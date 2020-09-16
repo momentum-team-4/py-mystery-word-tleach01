@@ -57,7 +57,6 @@ def play(word):
                 guessed_letters.append(guess)
                 word_list = list(word_complete)
                 indexes = [i for i, letter in enumerate(word) if letter == guess]
-                 # enumerate "allows us to loop over something and have an automatic counter"
                 for index in indexes:
                     word_complete = ''.join(word_list)
                 if "_" not in word_complete:
